@@ -1,5 +1,3 @@
-✔️ Task Goblin API — Initial README
-
 # Task Goblin API
 
 Task Goblin API is a minimal and clean task management REST API built with Spring Boot 3, Spring Web, Spring Data JPA, and H2 Database.  
