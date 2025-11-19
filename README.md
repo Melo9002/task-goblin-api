@@ -68,9 +68,9 @@ PUT /tasks/{id}/done
 
 ---
 
-Running the Application
+## Running the Application
 
-Using Maven Wrapper
+### Using Maven Wrapper
 
 ./mvnw spring-boot:run    (Linux/macOS)
 
@@ -83,7 +83,7 @@ http://localhost:8080
 
 ---
 
-H2 Console
+### H2 Console
 
 The H2 in-memory database console is available at:
 
@@ -99,19 +99,19 @@ Password: (empty)
 
 ---
 
-Example cURL Commands
+## Example cURL Commands
 
-Create a task:
+### Create a task:
 
 curl -X POST http://localhost:8080/tasks \
   -H "Content-Type: application/json" \
   -d '{"title":"Test","description":"Sample"}'
 
-List tasks:
+### List tasks:
 
 curl http://localhost:8080/tasks
 
-Mark as done:
+### Mark as done:
 
 curl -X PUT http://localhost:8080/tasks/1/done
 
