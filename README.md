@@ -1,5 +1,3 @@
----
-
 ✔️ Task Goblin API — Initial README
 
 # Task Goblin API
@@ -29,7 +27,19 @@ This project serves as a compact example of a well-structured Spring Boot applic
 
 ## Project Structure
 
-src/main/java/com/taskgoblin/api ├── controller/ ├── service/ │     └── TaskService / TaskServiceImpl ├── repository/ ├── model/ │     └── Task.java ├── dto/ │     └── TaskCreateDTO.java └── TaskGoblinApplication.java
+```
+src/main/java/com/taskgoblin/api
+ ├── controller/
+ ├── service/
+ │     └── TaskService / TaskServiceImpl
+ ├── repository/
+ ├── model/
+ │     └── Task.java
+ ├── dto/
+ │     └── TaskCreateDTO.java
+ └── TaskGoblinApplication.java
+```
+
 
 ---
 
