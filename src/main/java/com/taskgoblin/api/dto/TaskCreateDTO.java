@@ -1,22 +1,14 @@
 package com.taskgoblin.api.dto;
-
-import jakarta.validation.constraints.NotBlank;
-
-public class TaskCreateDTO {
-    @NotBlank(message = "Title is required")
-    private String title;
-
-    private String description;
-
-    public TaskCreateDTO() {}
-
-    public TaskCreateDTO(String title, String description) {
-        this.title = title;
-        this.description = description;
-    }
-
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
-}
+import com.taskgoblin.api.model.TaskPriority;
+import com.taskgoblin.api.model.TaskStatus;
+import java.time.LocalDate;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.*;
+public record TaskCreateDTO(
+    @NotBlank(message = "Title is required.")
+    @Size(max = 255, message = "Title must be 255 characters or fewer.") @Schema(example = "Polish the portfolio") String title,
+    @Size(max = 2000, message = "Description must be 2000 characters or fewer.") @Schema(example = "Add a screenshot and document the API.") String description,
+    TaskPriority priority,
+    TaskStatus status,
+    @Schema(example = "2026-09-18") LocalDate dueDate
+) {}
