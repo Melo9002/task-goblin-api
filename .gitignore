@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Local guild data and machine setup ###
+data/
+.cache/
+.local-tools.ps1
+node_modules/
+frontend/dist/
+*.log
+.env

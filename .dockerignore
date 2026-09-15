@@ -1,0 +1,9 @@
+.git
+target
+frontend/node_modules
+frontend/dist
+data
+.cache
+.local-tools.ps1
+.env
+*.log
